@@ -1,0 +1,467 @@
+{
+  "profile": "FINAL BACKEND UNLOCK V4",
+  "base": "CPU TECH FULL UNLOCK V3",
+  "base_dxe_sha256": "0da13e836a82d61869f4cde87f1d5a2a4b4b41fef6617eb887ae6f4728f99c7f",
+  "bios_region_sha256": "529da4c46c234db67c7c91ddfce425c7d71bf6a57ff7c8fe870063db261ae84e",
+  "code_tail_sha256": "2fae3d8891ffb3b140c7f54ee954d6a327d88e892f6877b29af18dff0092e36f",
+  "dxe_sha256": "10e7bbe27bfb380204dcc244033a6b3f6565502d4dbf4b39605bc656a772c30a",
+  "asrock_oc_controls_transplanted": [
+    {
+      "dest_rel": "0x43661",
+      "replaced": "redundant Load Optimized GPU OC Setting #2",
+      "inserted": "Advanced Turbo 50",
+      "qid": "0x4c6",
+      "varstore": "Setup",
+      "offset": "0x2aa",
+      "source_rel": "0x43066"
+    },
+    {
+      "dest_rel": "0x436d5",
+      "replaced": "redundant Load Optimized GPU OC Setting #3",
+      "inserted": "ASRock Vdroop Control",
+      "qid": "0x245",
+      "varstore": "Setup",
+      "offset": "0x2b5",
+      "source_rel": "0x43310"
+    }
+  ],
+  "additional_regions": [
+    [
+      "0x46bd0",
+      "0x472d0",
+      "PCI Subsystem + PCIe + ACPI advanced"
+    ],
+    [
+      "0x47f80",
+      "0x499d0",
+      "Platform Thermal + SATA/PCH Storage + Internal GOP"
+    ],
+    [
+      "0x49a60",
+      "0x49e50",
+      "Intel Rapid Start + TXT/PCH-FW"
+    ],
+    [
+      "0x4ae80",
+      "0x4bcf0",
+      "Platform Misc + Intel ICC + Network Stack"
+    ],
+    [
+      "0x4e920",
+      "0x4ef20",
+      "PCH-IO core + platform power"
+    ],
+    [
+      "0x4ef00",
+      "0x4f7a0",
+      "PCH USB/EHCI per-port controls"
+    ],
+    [
+      "0x4f790",
+      "0x4fb30",
+      "Azalia + PCH security/lock controls"
+    ],
+    [
+      "0x4fb20",
+      "0x52540",
+      "PCH PCIe root-port/resource controls"
+    ],
+    [
+      "0x52540",
+      "0x52850",
+      "System Agent navigation/capability controls"
+    ],
+    [
+      "0x52850",
+      "0x535c0",
+      "IGD/GOP + GT power/overclocking controls"
+    ],
+    [
+      "0x53600",
+      "0x54250",
+      "PEG/PCIe Gen3 training and equalization"
+    ],
+    [
+      "0x54250",
+      "0x55900",
+      "Memory/XMP/MRC/timing/channel controls"
+    ],
+    [
+      "0x55900",
+      "0x55c10",
+      "Memory thermal + DMI controls"
+    ]
+  ],
+  "additional_condition_blocks_neutralized": 230,
+  "additional_eq_comparisons_neutralized": 279,
+  "skipped_nontrivial_conditions": [
+    {
+      "region": "Platform Thermal + SATA/PCH Storage + Internal GOP",
+      "conditional": "SuppressIf",
+      "rel": "0x48a2a",
+      "expr_ops": [
+        "0x12",
+        "0x17",
+        "0x29"
+      ]
+    },
+    {
+      "region": "Platform Thermal + SATA/PCH Storage + Internal GOP",
+      "conditional": "SuppressIf",
+      "rel": "0x48aa9",
+      "expr_ops": [
+        "0x12",
+        "0x17",
+        "0x29"
+      ]
+    },
+    {
+      "region": "Platform Thermal + SATA/PCH Storage + Internal GOP",
+      "conditional": "SuppressIf",
+      "rel": "0x498c7",
+      "expr_ops": [
+        "0x12",
+        "0x17",
+        "0x29"
+      ]
+    },
+    {
+      "region": "Platform Thermal + SATA/PCH Storage + Internal GOP",
+      "conditional": "SuppressIf",
+      "rel": "0x4990b",
+      "expr_ops": [
+        "0x12",
+        "0x17",
+        "0x29"
+      ]
+    },
+    {
+      "region": "Platform Thermal + SATA/PCH Storage + Internal GOP",
+      "conditional": "SuppressIf",
+      "rel": "0x4995d",
+      "expr_ops": [
+        "0x12",
+        "0x17",
+        "0x29"
+      ]
+    },
+    {
+      "region": "Platform Thermal + SATA/PCH Storage + Internal GOP",
+      "conditional": "SuppressIf",
+      "rel": "0x499bd",
+      "expr_ops": [
+        "0x12",
+        "0x17",
+        "0x29"
+      ]
+    },
+    {
+      "region": "Intel Rapid Start + TXT/PCH-FW",
+      "conditional": "SuppressIf",
+      "rel": "0x49c8a",
+      "expr_ops": [
+        "0x12",
+        "0x17",
+        "0x29"
+      ]
+    },
+    {
+      "region": "Intel Rapid Start + TXT/PCH-FW",
+      "conditional": "SuppressIf",
+      "rel": "0x49cc8",
+      "expr_ops": [
+        "0x12",
+        "0x17",
+        "0x12",
+        "0x17",
+        "0x15",
+        "0x29"
+      ]
+    },
+    {
+      "region": "Intel Rapid Start + TXT/PCH-FW",
+      "conditional": "SuppressIf",
+      "rel": "0x49d0c",
+      "expr_ops": [
+        "0x12",
+        "0x17",
+        "0x29"
+      ]
+    },
+    {
+      "region": "Intel Rapid Start + TXT/PCH-FW",
+      "conditional": "SuppressIf",
+      "rel": "0x49e3b",
+      "expr_ops": [
+        "0x13"
+      ]
+    },
+    {
+      "region": "PCH-IO core + platform power",
+      "conditional": "SuppressIf",
+      "rel": "0x4ea98",
+      "expr_ops": [
+        "0x12",
+        "0x17",
+        "0x12",
+        "0x16",
+        "0x29"
+      ]
+    },
+    {
+      "region": "PCH-IO core + platform power",
+      "conditional": "SuppressIf",
+      "rel": "0x4eafc",
+      "expr_ops": [
+        "0x12",
+        "0x17",
+        "0x12",
+        "0x16",
+        "0x12",
+        "0x16",
+        "0x29"
+      ]
+    },
+    {
+      "region": "PCH-IO core + platform power",
+      "conditional": "SuppressIf",
+      "rel": "0x4ebf4",
+      "expr_ops": [
+        "0x12",
+        "0x17",
+        "0x12",
+        "0x16",
+        "0x29"
+      ]
+    },
+    {
+      "region": "PCH PCIe root-port/resource controls",
+      "conditional": "SuppressIf",
+      "rel": "0x4fd18",
+      "expr_ops": [
+        "0x12",
+        "0x17",
+        "0x29"
+      ]
+    },
+    {
+      "region": "PCH PCIe root-port/resource controls",
+      "conditional": "SuppressIf",
+      "rel": "0x4fd51",
+      "expr_ops": [
+        "0x12",
+        "0x12",
+        "0x17",
+        "0x16",
+        "0x29"
+      ]
+    },
+    {
+      "region": "PCH PCIe root-port/resource controls",
+      "conditional": "SuppressIf",
+      "rel": "0x4fd92",
+      "expr_ops": [
+        "0x12",
+        "0x12",
+        "0x17",
+        "0x16",
+        "0x29"
+      ]
+    },
+    {
+      "region": "PCH PCIe root-port/resource controls",
+      "conditional": "SuppressIf",
+      "rel": "0x4fdd3",
+      "expr_ops": [
+        "0x12",
+        "0x12",
+        "0x17",
+        "0x16",
+        "0x29"
+      ]
+    },
+    {
+      "region": "PCH PCIe root-port/resource controls",
+      "conditional": "SuppressIf",
+      "rel": "0x4fe14",
+      "expr_ops": [
+        "0x12",
+        "0x12",
+        "0x17",
+        "0x16",
+        "0x29"
+      ]
+    },
+    {
+      "region": "PCH PCIe root-port/resource controls",
+      "conditional": "SuppressIf",
+      "rel": "0x4fe55",
+      "expr_ops": [
+        "0x12",
+        "0x12",
+        "0x17",
+        "0x16",
+        "0x29"
+      ]
+    },
+    {
+      "region": "PCH PCIe root-port/resource controls",
+      "conditional": "SuppressIf",
+      "rel": "0x4fe96",
+      "expr_ops": [
+        "0x12",
+        "0x12",
+        "0x17",
+        "0x16",
+        "0x29"
+      ]
+    },
+    {
+      "region": "PCH PCIe root-port/resource controls",
+      "conditional": "SuppressIf",
+      "rel": "0x4fed7",
+      "expr_ops": [
+        "0x12",
+        "0x12",
+        "0x17",
+        "0x16",
+        "0x29"
+      ]
+    },
+    {
+      "region": "PEG/PCIe Gen3 training and equalization",
+      "conditional": "SuppressIf",
+      "rel": "0x53885",
+      "expr_ops": [
+        "0x12",
+        "0x17",
+        "0x29"
+      ]
+    },
+    {
+      "region": "Memory/XMP/MRC/timing/channel controls",
+      "conditional": "SuppressIf",
+      "rel": "0x542c5",
+      "expr_ops": [
+        "0x12",
+        "0x17",
+        "0x29"
+      ]
+    },
+    {
+      "region": "Memory/XMP/MRC/timing/channel controls",
+      "conditional": "SuppressIf",
+      "rel": "0x542e2",
+      "expr_ops": [
+        "0x12",
+        "0x17",
+        "0x29"
+      ]
+    },
+    {
+      "region": "Memory/XMP/MRC/timing/channel controls",
+      "conditional": "SuppressIf",
+      "rel": "0x54388",
+      "expr_ops": [
+        "0x12",
+        "0x17",
+        "0x12",
+        "0x17",
+        "0x15",
+        "0x29"
+      ]
+    },
+    {
+      "region": "Memory thermal + DMI controls",
+      "conditional": "SuppressIf",
+      "rel": "0x55930",
+      "expr_ops": [
+        "0x12",
+        "0x12",
+        "0x17",
+        "0x16",
+        "0x29"
+      ]
+    }
+  ],
+  "backend_module_evidence": {
+    "Intel ICC / clocking": [
+      "IccPlatform",
+      "IccOverClocking",
+      "WdtDxe",
+      "WdtAppDxe"
+    ],
+    "PCH PCIe/resources": [
+      "PchInitDxe",
+      "PchPcieSmm",
+      "PciExpressDxe",
+      "PciHotPlug"
+    ],
+    "SATA/storage": [
+      "SataController",
+      "PchInitDxe"
+    ],
+    "System Agent / IGD / PEG": [
+      "SaInitDxe",
+      "SaLateInitSmm",
+      "IntelSaGopDriver",
+      "IntelIvbGopDriver"
+    ],
+    "CPU policy/power": [
+      "CpuPolicyDxe",
+      "CpuInitDxe",
+      "CpuDxe"
+    ],
+    "Security/flash locks": [
+      "PchSpiWrap",
+      "Runtime",
+      "PchInitDxe"
+    ],
+    "Memory bookkeeping": [
+      "UpdateMemoryRecord",
+      "SmBiosMemory"
+    ],
+    "TXT": [
+      "TxtDxe",
+      "TxtOneTouchDxe",
+      "TXTWrapperDxe"
+    ]
+  },
+  "structural_controls_verified": [
+    "SATA Aggressive Link Power Management",
+    "ICC New frequency #1",
+    "ICC Apply immediately #1",
+    "ICC Apply permanently #1",
+    "SMI Lock",
+    "BIOS Lock",
+    "BIOS Interface Lock",
+    "RTC RAM Lock",
+    "PCH Root Port 1",
+    "GT OverClocking Support",
+    "GT OverClocking Frequency",
+    "PEG Gen3 Equalization",
+    "XMP",
+    "DRAM Frequency",
+    "MRC Fast Boot",
+    "Memory Remap",
+    "CAS Latency",
+    "DMI Gen2"
+  ],
+  "retained_from_v3": [
+    "No-K OC Setup[0x42] toggle",
+    "All-Core/1-Core detected-max UI clamp removal",
+    "CPU tech/PPM/TXT unlock",
+    "Full Menus/PCI Advanced"
+  ],
+  "not_changed": [
+    "ReBAR",
+    "Above 4G default",
+    "CSM default",
+    "Intel ME region",
+    "Flash Descriptor"
+  ],
+  "warnings": [
+    "Above 4G is known to black-screen this physical board when enabled; it is not enabled by default.",
+    "Hidden ICC/PEG/memory/lock controls are real firmware controls and can make the machine unbootable if configured incorrectly. Defaults are preserved."
+  ]
+}

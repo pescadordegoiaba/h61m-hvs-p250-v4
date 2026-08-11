@@ -1,0 +1,13 @@
+# Local flashrom artifacts / backups
+preflash_*/
+**/preflash_*/
+*.log
+current_bios_region.bin
+postflash_bios_region.bin
+live_merged_*.bin
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
+*~

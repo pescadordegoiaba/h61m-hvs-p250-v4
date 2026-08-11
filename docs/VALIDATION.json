@@ -1,0 +1,7 @@
+{
+  "decode_roundtrip": true,
+  "structural_check_count": 18,
+  "structural_checks_pass": true,
+  "no_k_toggle_preserved": true,
+  "asrock_extra_controls_inserted": true
+}
